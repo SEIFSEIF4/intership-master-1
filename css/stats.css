@@ -1,0 +1,146 @@
+/*gloabal rules start*/
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Cairo", sans-serif;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    padding-top: 200px;
+}
+
+.container .app {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.container .app h1 {
+    font-weight: 900;
+}
+
+.container .app span {
+    border: 3px solid #3153bb;
+    text-align: center;
+    padding: 3px 50px;
+    border-radius: 10px;
+    color: black;
+}
+
+.container .info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.container .info .box {
+    border: 4px solid #cbcbcb;
+    padding: 10px 45px;
+}
+
+.container .info .box:not(:last-of-type) {
+    border-right: 0;
+}
+
+.container .info .year {
+    border-radius: 20px 0 0 20px;
+}
+.container .info .status {
+    border-radius: 0 20px 20px 0;
+}
+
+.btns {
+    margin-top: 100px;
+}
+
+.btn {
+    box-shadow: inset 0px 1px 0px 0px #dcecfb;
+    background: linear-gradient(to bottom, #80a5ca 5%, #2d3640 100%);
+    background-color: #bddbfa;
+    border-radius: 10px;
+    border: 1px solid #84bbf3;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528ecc;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+    background-color: #80b5ea;
+}
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.btns .btn i {
+    padding: 0 5px;
+}
+
+@media (width < 1200px) {
+    .container .info .box {
+        padding: 0 10px;
+    }
+    .btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .btns .btn {
+        margin-top: 15px;
+    }
+}
+
+@media (width < 768px) {
+
+    .container .app{
+        flex-direction: column;
+    }
+    .container .app span{
+        margin: 15px 0;
+    }
+    .container .info {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        width: 30%;
+        border: 1px solid rgb(251, 251, 251);
+        margin: auto;
+    }
+    .container .info .box{
+        border-right: 0;
+        border-left: 0;
+        border-top: 0;
+    }
+    .container .info .year,
+    .container .info .status {
+        border-radius:0;
+    }
+    .btn{
+        justify-content: space-around;
+    }
+}
