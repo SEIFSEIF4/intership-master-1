@@ -11,7 +11,8 @@ html {
 }
 body {
     font-family: "Cairo", sans-serif;
-    background-color: rgba(0, 0, 0, 0.3);
+    background: #2c2c2c;
+    /* background: linear-gradient(90deg, rgba(48,100,101,1) 0%, rgba(34,34,34,1) 100%); */
 }
 
 .container {
@@ -29,14 +30,15 @@ body {
 
 .container .app h1 {
     font-weight: 900;
+    color: white;
 }
 
 .container .app span {
-    border: 3px solid #3153bb;
+    border: 3px solid #adacac;
     text-align: center;
     padding: 3px 50px;
     border-radius: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .container .info {
@@ -49,8 +51,9 @@ body {
 }
 
 .container .info .box {
-    border: 4px solid #cbcbcb;
+    border: 2px solid #a3a3a3;
     padding: 10px 45px;
+    color: rgb(230, 226, 226);
 }
 
 .container .info .box:not(:last-of-type) {
