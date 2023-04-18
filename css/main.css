@@ -287,6 +287,8 @@ span.msg {
 }
 .applyforjob > .container h2 {
     font-size: 20px;
+    width: 60%;
+    text-align: start;
 }
 
 
@@ -325,6 +327,7 @@ span.msg {
     padding: 15px 24px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #528ecc;
+    width: 15%;
 }
 
 .btn:hover {
@@ -383,6 +386,9 @@ span.msg {
 }
 .openJobs-instructor > .container h2 {
     font-size: 20px;
+    width: 60%;
+    text-align: start;
+    line-height: 2;
 }
 
 /******** File ***************/
@@ -491,6 +497,7 @@ button {
 .AnnounceJob-instructor > .container h1 {
     font-size: 30px;
     text-align: start;
+    width: 60%;
 }
 
 .AnnounceJob-instructor > .container .boxs-request {
