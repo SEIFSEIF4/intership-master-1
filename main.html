@@ -47,57 +47,79 @@
                     class="collapse navbar-collapse"
                     id="navbarSupportedContent"
                 >
-                    <div class="pages m-auto">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link active"
-                                    aria-current="page"
-                                    href="#dashBoard"
-                                    >Dashboard</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#applyForJob"
-                                    >OpenJobs</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
+                <div class="pages m-auto">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                       <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#dashBoard"
+                                >Dashboard</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#applyForJob"
+                                >OpenJobs</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" id="envelope"
+                                ><i class="fa-solid fa-envelope"></i
+                            ></a>
                             <div class="msgs">
-                            <a href="#"><span class="msg" id="sendMessage">Send Message</span></a>
-                            <a href="#"><span class="msg" id="seeMessage" >See Message</span></a>
-                        </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"
+                                <a href="#"
+                                    ><span class="msg" id="sendMessage"
+                                        >Send Message</span
+                                    ></a
+                                >
+                                <a href="#"
+                                    ><span class="msg" id="seeMessage"
+                                        >See Message</span
+                                    ></a
+                                >
+                            </div>
+                        </li>
+                        <li class="nav-item bell" id="bell">
+                            <a class="nav-link"
                                 ><i class="fa-solid fa-bell"></i
-                                    ></a>
-                                    <div class="container not">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div><p>Internship Coordinator " Dr. Kristin Abdo" has approved your internship request </p></div>
-                                                    <div><p>Internship Coordinator " Dr. Kristin Abdo" has approved your internship request </p></div>
-                                                </div>
-                                        </div>
-                                    </div>
-                                    </span>
-                                </li>
-                            </ul>
+                            ></a>
+                        </li>
+                    </ul>
 
-                            <div class="user-info">
+                    <div class="user-info">
                         <span id="user-name">Mahmoud Abdelkerim</span>
                         <div class="pfp-info">
-                        <a href="#" id="pfp"><i class="fa-solid fa-circle-user fa-2x"></i></a>
-                        <a href="index.html"><span id="pfp-span">Logout</span></a>
-                    </div>
+                            <a id="pfp"
+                                ><i class="fa-solid fa-circle-user fa-2x"></i
+                            ></a>
+                            <a href="index.html"
+                                ><span id="pfp-span" class="pfp-span"
+                                    >Logout</span
+                                ></a
+                            >
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
+        <div class="container not">
+            <div class="box-not">
+                <p>
+                    Internship Coordinator " Dr. Kristin Abdo" has approved your
+                    internship request
+                </p>
+            </div>
+            <div class="box-not">
+                <p>
+                    Internship Coordinator " Dr. Kristin Abdo" has approved your
+                    internship request
+                </p>
+            </div>
+            <a href="#" class="" id="seemore">See More</a>
+        </div>
 
         <main>
             <section  id="dashBoard">

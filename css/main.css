@@ -102,8 +102,8 @@ span.msg {
     margin-left: 1rem;
     color: white;
 }
-.user-info span {
-}
+/* .user-info span {
+} */
 
 .user-info span:hover {
     color: #16aeca;
