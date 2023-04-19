@@ -1,10 +1,16 @@
-const navLink = document.querySelectorAll(".nav_link");
-function linkAct() {
-    navLink.forEach((n) => n.classList.remove("active"));
-    this.classList.add("active");
-}
-navLink.forEach((n) => n.addEventListener("click", linkAct));
+// const navLink = document.querySelectorAll(".nav_link");
+// function linkAct() {
+//     navLink.forEach((n) => n.classList.remove("active"));
+//     this.classList.add("active");
+// }
+// navLink.forEach((n) => n.addEventListener("click", linkAct));
 
+// const navItem = document.querySelectorAll(".nav-item");
+// function linkAct2() {
+//     navItem.forEach((n) => n.classList.remove("active"));
+//     this.classList.add("active");
+// }
+// navItem.forEach((n) => n.addEventListener("click", linkAct2));
 /******************************** */
 
 function scrollFunction() {
@@ -25,14 +31,16 @@ pfp.addEventListener("click", () => {
     pfpSpan.classList.toggle("active");
 });
 
-const navItem = document.querySelectorAll(".nav-item");
-function linkAct2() {
-    navItem.forEach((n) => n.classList.remove("active"));
-    this.classList.add("active");
-}
-navItem.forEach((n) => n.addEventListener("click", linkAct2));
-
-
+const bell = document.getElementById("bell");
+const bellContainer = document.querySelector(".container.not");
+const envelope = document.getElementById("envelope");
+const msgs = document.querySelector(".msgs");
+bell.addEventListener("click", () => {
+    bellContainer.classList.toggle("active");
+});   
+envelope.addEventListener("click", () => {
+    msgs.classList.toggle("active");
+});   
 
 const seeAll = document.getElementById("seeAll");
 const boxsRequest = document.getElementById("boxsRequest");
@@ -50,20 +58,14 @@ seeAll2.addEventListener("click", () => {
 const buttons = document.querySelectorAll('button');
 const modal = document.querySelector('.card--wrapper');
 
-
-
 //event for handeling buttons when it got clicked 
 buttons.forEach(button =>button.addEventListener('click',handelButtonClick));
 //event for handeling keyup 
 window.addEventListener('keyup',handelKeyup);
 
-
-
 function handelKeyup(e){
     if(e.key === 'Escape') closeModal();
 }
-
-
 
 function handelButtonClick(e){
     if(e.currentTarget.classList.contains('disapprove_btn'))
@@ -75,9 +77,6 @@ function handelButtonClick(e){
         closeModal();
     }
 }
-
-
-
 
 function openModal(){
     if(modal.classList.contains('open'))

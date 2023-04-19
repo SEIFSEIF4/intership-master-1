@@ -39,7 +39,7 @@ nav.navbar .navbar-nav .nav-item a.nav-link {
 
 nav.navbar .navbar-nav .nav-item a.nav-link:hover,
 nav.navbar .navbar-nav .nav-item a.nav-link.active {
-    color: #ffffff;
+    color: #16aeca;
 }
 
 nav.navbar.noTransparrent .nav-item a.nav-link {
@@ -74,7 +74,7 @@ nav.navbar.noTransparrent {
 }
 
 #seeMessage {
-    margin-top: 55px;
+    margin-top: 48px;
 }
 
 span.msg {
@@ -83,14 +83,14 @@ span.msg {
     width: 150px;
     text-align: center;
     color: black;
-    background-color: white;
+    background-color: #c2c2c2;
     padding: 5px 7px;
     transform: translateY(10px);
     border-radius: 3px;
     display: none;
 }
 
-.nav-item.active span.msg {
+.msgs.active span.msg {
     display: inline-block;
     padding: 10px;
 }
@@ -101,6 +101,12 @@ span.msg {
     align-items: center;
     margin-left: 1rem;
     color: white;
+}
+.user-info span {
+}
+
+.user-info span:hover {
+    color: #16aeca;
 }
 
 .user-info i {
@@ -128,26 +134,150 @@ span.msg {
     color: black;
     background-color: white;
     padding: 3px 5px;
-    transform: translate(15px, 40px);
+    transform: translate(15px, 35px);
     border-radius: 3px;
-    opacity: 0;
+    background-color: #c2c2c2;
+    display: none;
+}
+.pfp-span.active {
+    display: block;
 }
 
-.pfp-info span.active {
-    opacity: 1;
-}
-.not .row .col-12 {
-    position: relative;
-}
-.not .row p {
-    position: absolute;
+.container.not {
+    max-width: 250px;
+    min-height: 180px;
+    position: fixed;
+    top: 90px;
+    right: 16%;
+    border-radius: 5px;
     font-size: 11px;
-    color: white;
-    width: 200px;
-    background-color: burlywood;
+    color: rgb(13, 13, 13);
+    background-color: #c2c2c2;
+    display: none;
+}
+
+.container.not.active {
+    display: block;
+}
+
+.container.not > .box-not {
     border-bottom: 1px solid white;
-    padding: 10px 15px;
-    opacity: 0;
+    padding-top: 10px;
+}
+
+.container.not > .box-not p {
+    color: black;
+}
+
+.container.not a {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 2rem 0 10px;
+    color: black;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn {
+    background-image: linear-gradient(
+        to right,
+        #16222a 0%,
+        #45828d96 51%,
+        #16222a 100%
+    );
+    margin: 10px;
+    padding: 10px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    width: 15%;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.btns .btn i {
+    padding: 0 5px;
+}
+.AnnounceJob-instructor .box-request .btn,
+.openJobs-instructor .box-request .btn {
+    padding: 10px 35px;
+}
+
+.sub {
+    width: 30%;
+    margin: auto;
+    margin-top: 15px;
+}
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn {
+    background-image: linear-gradient(
+        to right,
+        #16222a 0%,
+        #45828d96 51%,
+        #16222a 100%
+    );
+    margin: 10px;
+    padding: 10px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    width: 15%;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.btns .btn i {
+    padding: 0 5px;
+}
+.AnnounceJob-instructor .box-request .btn,
+.openJobs-instructor .box-request .btn {
+    padding: 10px 35px;
+}
+
+.sub {
+    width: 30%;
+    margin: auto;
+    margin-top: 15px;
 }
 
 /**************** Intership **********************/
@@ -209,16 +339,6 @@ span.msg {
     color: white;
 }
 
-@media (width < 768px) {
-    .dashboard > .container {
-        width: 750px;
-        margin-top: 251px;
-    }
-    nav.navbar {
-        background-color: #255b64;
-    }
-}
-
 @media (width < 992px) {
     .navbar-nav {
         text-align: center;
@@ -226,11 +346,33 @@ span.msg {
     .navbar-nav.icons {
         display: none;
     }
+    a.btn {
+        font-size: 15px;
+        padding: 15px 0;
+    }
+}
+
+@media (width < 768px) {
+    .dashboard > .container {
+        width: 750px;
+        margin-top: 75px;
+    }
+    nav.navbar {
+        background-color: #255b64;
+    }
+    .container > .logo {
+        width: 18rem;
+    }
+    a.btn {
+        font-size: 10px;
+        padding: 15px 0;
+    }
 }
 
 @media (min-width: 768px) {
     .dashboard > .container {
         width: 750px;
+        min-height: calc(100vh - 25px);
     }
     nav.navbar {
         background-color: #255b64;
@@ -263,7 +405,7 @@ span.msg {
 }
 
 .applyforjob > .container .boxs-request {
-    max-height: 360px;
+    max-height: 255px;
     overflow: hidden;
 }
 
@@ -280,7 +422,7 @@ span.msg {
     margin-top: 15px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -291,7 +433,6 @@ span.msg {
     text-align: start;
 }
 
-
 /**************** dashBoard-instructor **********************/
 
 .dashBoard-instructor > .container {
@@ -300,54 +441,46 @@ span.msg {
     justify-content: center;
     align-items: center;
 }
+.dashBoard-instructor > .container img{
+width: 7%;
+}
 
 .dashBoard-instructor > .container h1 {
+    display: block;
     font-size: 50px;
     color: blue;
-}
-
-.btns {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.btn {
-    box-shadow: inset 0px 1px 0px 0px #dcecfb;
-    background: linear-gradient(to bottom, #80a5ca 5%, #2d3640 100%);
-    background-color: #bddbfa;
-    border-radius: 10px;
-    border: 1px solid #84bbf3;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 15px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #528ecc;
-    width: 15%;
-}
-
-.btn:hover {
-    background: linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
-    background-color: #80b5ea;
-}
-.btn:active {
-    position: relative;
-    top: 1px;
-}
-
-.btns .btn i {
-    padding: 0 5px;
-}
-
-.sub {
-    width: 30%;
-    margin: auto;
-    margin-top: 15px;
-}
+    transition: all 1s ease-in;
+    animation: myAnim 3s ease-out .5s 1 normal forwards;}
+    @keyframes myAnim {
+        0%,
+        100% {
+            transform: translateY(0) rotate(0);
+            transform-origin: 50% 50%;
+        }
+    
+        15% {
+            transform: translateY(-30px) rotate(-6deg);
+        }
+    
+        30% {
+            transform: translateY(15px) rotate(6deg);
+        }
+    
+        45% {
+            transform: translateY(-15px) rotate(-3.6deg);
+        }
+    
+        60% {
+            transform: translateY(9px) rotate(2.4deg);
+        }
+    
+        75% {
+            transform: translateY(-6px) rotate(-1.2deg);
+        }
+        100% {
+            display: none;
+        }
+    }
 /******** Requests ********/
 .openJobs-instructor > .container {
     min-height: 100vh;
@@ -362,7 +495,7 @@ span.msg {
 }
 
 .openJobs-instructor > .container .boxs-request {
-    max-height: 360px;
+    max-height: 300px;
     overflow: hidden;
 }
 
@@ -379,7 +512,7 @@ span.msg {
     margin-top: 15px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -392,7 +525,7 @@ span.msg {
 }
 
 /******** File ***************/
-section.file > .container{
+section.file > .container {
     height: calc(100vh - 100px);
     width: 100%;
     margin-top: 100px;
@@ -412,7 +545,7 @@ section.file > .container{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 20px;
 }
 
 .pdf-file__wrapper img {
@@ -425,9 +558,8 @@ section.file > .container{
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 150px;
 }
 
 button {
@@ -447,7 +579,11 @@ button {
     width: 100%;
     position: fixed;
     background: rgb(240, 230, 235);
-    background: linear-gradient(332deg, rgb(231 220 225) 37%, rgb(197 228 234) 64%);
+    background: linear-gradient(
+        332deg,
+        rgb(231 220 225) 37%,
+        rgb(197 228 234) 64%
+    );
     z-index: 2;
     top: 0;
     right: 0;
@@ -473,7 +609,6 @@ button {
     border: 0.5px solid #444;
     width: 800px;
     height: 150px;
-
 }
 
 .card--wrapper button {
@@ -497,11 +632,10 @@ button {
 .AnnounceJob-instructor > .container h1 {
     font-size: 30px;
     text-align: start;
-    width: 60%;
 }
 
 .AnnounceJob-instructor > .container .boxs-request {
-    max-height: 360px;
+    max-height: 300px;
     overflow: hidden;
 }
 
@@ -518,22 +652,26 @@ button {
     margin-top: 15px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .AnnounceJob-instructor > .container h2 {
     font-size: 20px;
+    width: 60%;
+    text-align: start;
 }
 
 @media (width < 1200px) {
     section.openJobs-instructor > .container .boxs-request,
     section.AnnounceJob-instructor > .container .boxs-request,
     section.applyforjob > .container .boxs-request {
-        max-height: 300px;
+        max-height: 260px;
     }
 }
+
+
 
 /******** EnterJobInfo ********/
 section.EnterJobInfo-instructor .job-info > .container {
@@ -592,9 +730,12 @@ button[type="submit"]:hover {
 }
 
 .form-group input[type="text"] {
-    color: black;
-    border: 1px solid #dbdbdb;
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     font-size: 14px;
     padding: 8px;
     width: 100%;

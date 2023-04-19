@@ -15,7 +15,11 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
-        <link rel="shortcut icon" href="images/UU-icon.ico" type="image/x-icon">
+        <link
+            rel="shortcut icon"
+            href="images/UU-icon.ico"
+            type="image/x-icon"
+        />
         <link rel="stylesheet" href="css/all.min.css" />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/main.css" />
@@ -63,98 +67,152 @@
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#EnterJobInfoInstructor"
+                                <a
+                                    class="nav-link"
+                                    href="#EnterJobInfoInstructor"
                                     >Jobs</a
                                 >
                             </li>
                         </ul>
                     </div>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <li class="nav-item">
+                            <a class="nav-link" id="envelope"
+                                ><i class="fa-solid fa-envelope"></i
+                            ></a>
                             <div class="msgs">
-                            <a href="#"><span class="msg" id="sendMessage">Send Message</span></a>
-                            <a href="#"><span class="msg" id="seeMessage" >See Message</span></a>
-                        </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"
+                                <a href="#"
+                                    ><span class="msg" id="sendMessage"
+                                        >Send Message</span
+                                    ></a
+                                >
+                                <a href="#"
+                                    ><span class="msg" id="seeMessage"
+                                        >See Message</span
+                                    ></a
+                                >
+                            </div>
+                        </li>
+                        <li class="nav-item bell" id="bell">
+                            <a class="nav-link"
                                 ><i class="fa-solid fa-bell"></i
-                                    ></a>
-                                    <div class="container not">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div><p>Internship Coordinator " Dr. Kristin Abdo" has approved your internship request </p></div>
-                                                    <div><p>Internship Coordinator " Dr. Kristin Abdo" has approved your internship request </p></div>
-                                                </div>
-                                        </div>
-                                    </div>
-                                    </span>
-                                </li>
-                            </ul>
+                            ></a>
+                        </li>
+                    </ul>
 
-                            <div class="user-info">
+                    <div class="user-info">
                         <span id="user-name">Mahmoud Abdelkerim</span>
                         <div class="pfp-info">
-                        <a href="#" id="pfp"><i class="fa-solid fa-circle-user fa-2x"></i></a>
-                        <a href="index.html"><span id="pfp-span">Logout</span></a>
-                    </div>
+                            <a id="pfp"
+                                ><i class="fa-solid fa-circle-user fa-2x"></i
+                            ></a>
+                            <a href="index.html"
+                                ><span id="pfp-span" class="pfp-span"
+                                    >Logout</span
+                                ></a
+                            >
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
+        <div class="container not">
+            <div class="box-not">
+                <p>
+                    Internship Coordinator " Dr. Kristin Abdo" has approved your
+                    internship request
+                </p>
+            </div>
+            <div class="box-not">
+                <p>
+                    Internship Coordinator " Dr. Kristin Abdo" has approved your
+                    internship request
+                </p>
+            </div>
+            <a href="#" class="" id="seemore">See More</a>
+        </div>
 
         <main>
-            <section class="dashBoard-instructor"  id="dashBoardInstructor">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-12"><h1>Hello Dr Kristin Benli</h1></div>
-                    <div class="col-md-12 btns">
-                        <a href="#fileUpload" class="btn">Upload Form</a>
-                        <a href="#AnnounceJobInstructor" class="btn">see all requests</a>
+            <section class="dashBoard-instructor" id="dashBoardInstructor">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>
+                                Hello Dr Kristin Benli
+                                <img
+                                    src="images/waving-hand-people.png"
+                                    alt=""
+                                />
+                            </h1>
+                        </div>
+                        <div class="col-md-12 btns">
+                            <a href="#fileUpload" class="btn">Upload Form</a>
+                            <a href="#AnnounceJobInstructor" class="btn"
+                                >see all requests</a
+                            >
+                        </div>
                     </div>
                 </div>
-            </div>
             </section>
-            <section class="openJobs-instructor"  id="openJobsInstructor">
+            <section class="openJobs-instructor" id="openJobsInstructor">
                 <div class="container text-center">
                     <div class="row">
                         <div class="col-md-12">
                             <h1>Requests</h1>
                             <div class="boxs-request" id="boxsRequest">
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" has sent their internship form.</h2>
-                                <a class="btn" href="#">Generate Letter</a>
-                                <a class="btn" href="#">Evaluate Form</a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" has sent their internship form.</h2>
-                                <a class="btn" href="#">Generate Letter </a>
-                                <a class="btn" href="#">Evaluate Form </a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" has sent their internship form.</h2>
-                                <a class="btn" href="#">Generate Letter </a>
-                                <a class="btn" href="#">Evaluate Form </a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" has sent their internship form.</h2>
-                                <a class="btn" href="#">Generate Letter </a>
-                                <a class="btn" href="#">Evaluate Form </a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" has sent their internship form.</h2>
-                                <a class="btn" href="#">Generate Letter </a>
-                                <a class="btn" href="#">Evaluate Form </a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" has sent their internship form.</h2>
-                                <a class="btn" href="#">Generate Letter </a>
-                                <a class="btn" href="#">Evaluate Form </a>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" has sent
+                                        their internship form.
+                                    </h2>
+                                    <a class="btn" href="#">Generate Letter</a>
+                                    <a class="btn" href="#">Evaluate Form</a>
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" has sent
+                                        their internship form.
+                                    </h2>
+                                    <a class="btn" href="#">Generate Letter </a>
+                                    <a class="btn" href="#">Evaluate Form </a>
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" has sent
+                                        their internship form.
+                                    </h2>
+                                    <a class="btn" href="#">Generate Letter </a>
+                                    <a class="btn" href="#">Evaluate Form </a>
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" has sent
+                                        their internship form.
+                                    </h2>
+                                    <a class="btn" href="#">Generate Letter </a>
+                                    <a class="btn" href="#">Evaluate Form </a>
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" has sent
+                                        their internship form.
+                                    </h2>
+                                    <a class="btn" href="#">Generate Letter </a>
+                                    <a class="btn" href="#">Evaluate Form </a>
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" has sent
+                                        their internship form.
+                                    </h2>
+                                    <a class="btn" href="#">Generate Letter </a>
+                                    <a class="btn" href="#">Evaluate Form </a>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        <a class="btn sub" id="seeAll">See All Form Submissions</a>
+                        <a class="btn sub" id="seeAll"
+                            >See All Form Submissions</a
+                        >
                     </div>
                 </div>
             </section>
@@ -163,109 +221,162 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="pdf-file__wrapper">
-                                <img src="images/file-pdf-regular.svg" alt="pdf icon">
+                                <img
+                                    src="images/file-pdf-regular.svg"
+                                    alt="pdf icon"
+                                />
                             </div>
                             <div class="buttons__wrapper">
-                                <button class="approve_btn">Sign & Approve</button>
-                                <button class="disapprove_btn">Disapprove & Send Back</button>
+                                <button class="approve_btn">
+                                    Sign & Approve
+                                </button>
+                                <button class="disapprove_btn">
+                                    Disapprove & Send Back
+                                </button>
                             </div>
                             <div class="card--wrapper">
                                 <h1>Why is it rejected?</h1>
-                                <textarea name="rejection cause" id="rejection-explaination" cols="30" rows="10"
-                                    placeholder="Type the rejection reason...."></textarea>
-                                <button class="send-rejetion_btn">Send back to student</button>
+                                <textarea
+                                    name="rejection cause"
+                                    id="rejection-explaination"
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="Type the rejection reason...."
+                                ></textarea>
+                                <button class="send-rejetion_btn">
+                                    Send back to student
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="AnnounceJob-instructor"  id="AnnounceJobInstructor">
+            <section class="AnnounceJob-instructor" id="AnnounceJobInstructor">
                 <div class="container text-center">
                     <div class="row">
                         <div class="col-md-12">
                             <h1>Approved Requests</h1>
                             <div class="boxs-request" id="boxsRequest2">
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" Form was approved</h2>
-                                <a class="btn" href="#">Generate Letter</a>
-                                <a class="btn" href="#">Evaluate Form</a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" Form was approved</h2>
-                                <a class="btn" href="#">Generate Letter </a>
-                                <a class="btn" href="#">Evaluate Form </a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" Form was approved</h2>
-                                <a class="btn" href="#">Generate Letter </a>
-                                <a class="btn" href="#">Evaluate Form </a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" Form was approved</h2>
-                                <a class="btn" href="#">Generate Letter </a>
-                                <a class="btn" href="#">Evaluate Form </a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" Form was approved</h2>
-                                <a class="btn" href="#">Generate Letter </a>
-                                <a class="btn" href="#">Evaluate Form </a>
-                            </div>
-                            <div class="box-request">
-                                <h2>Student "Mahmoud Abdelkerim" Form was approved</h2>
-                                <a class="btn" href="#">Generate Letter </a>
-                                <a class="btn" href="#">Evaluate Form </a>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" Form was
+                                        approved
+                                    </h2>
+                                    <a class="btn" href="#">Generate Letter</a>
+                                    <a class="btn" href="#">Evaluate Form</a>
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" Form was
+                                        approved
+                                    </h2>
+                                    <a class="btn" href="#">Generate Letter </a>
+                                    <a class="btn" href="#">Evaluate Form </a>
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" Form was
+                                        approved
+                                    </h2>
+                                    <a class="btn" href="#">Generate Letter </a>
+                                    <a class="btn" href="#">Evaluate Form </a>
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" Form was
+                                        approved
+                                    </h2>
+                                    <a class="btn" href="#">Generate Letter </a>
+                                    <a class="btn" href="#">Evaluate Form </a>
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" Form was
+                                        approved
+                                    </h2>
+                                    <a class="btn" href="#">Generate Letter </a>
+                                    <a class="btn" href="#">Evaluate Form </a>
+                                </div>
+                                <div class="box-request">
+                                    <h2>
+                                        Student "Mahmoud Abdelkerim" Form was
+                                        approved
+                                    </h2>
+                                    <a class="btn" href="#">Generate Letter </a>
+                                    <a class="btn" href="#">Evaluate Form </a>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        <a class="btn sub" id="seeAll2">See All Form Submissions</a>
+                        <a class="btn sub" id="seeAll2"
+                            >See All Form Submissions</a
+                        >
                     </div>
                 </div>
             </section>
-            <section class="EnterJobInfo-instructor"  id="EnterJobInfoInstructor">
+            <section
+                class="EnterJobInfo-instructor"
+                id="EnterJobInfoInstructor"
+            >
                 <div class="job-info">
                     <div class="container text-center">
                         <div class="row">
                             <h2>Enter Job Information</h2>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <input
-                                type="text"
-                                id="company-name"
-                                name="company-name"
-                                placeholder="Company Name"
-                                required
-                              />
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input
+                                        type="text"
+                                        id="company-name"
+                                        name="company-name"
+                                        placeholder="Company Name"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="form-group">
+                                    <input
+                                        type="text"
+                                        id="location"
+                                        name="location"
+                                        placeholder="Duration"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="form-group">
+                                    <input
+                                        type="text"
+                                        id="minimum-age"
+                                        name="minimum-age"
+                                        placeholder="Minimum Age"
+                                        required
+                                    />
+                                </div>
                             </div>
-            
-                            <div class="form-group">
-                              <input type="text" id="location" name="location"  placeholder="Duration"
-                              required />
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input
+                                        type="text"
+                                        id="job-title"
+                                        name="job-title"
+                                        placeholder="Job Title"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="form-group">
+                                    <input
+                                        type="text"
+                                        id="duration"
+                                        name="duration"
+                                        placeholder="Company Name"
+                                        required
+                                    />
+                                </div>
                             </div>
-            
-                            <div class="form-group">
-                              <input
-                                type="text"
-                                id="minimum-age"
-                                name="minimum-age"
-                                placeholder="Minimum Age"
-                                required
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <input type="text" id="job-title" name="job-title" placeholder="Job Title" required />
-                            </div>
-            
-                            <div class="form-group">
-                              <input type="text" id="duration" name="duration" placeholder="Company Name" required />
-                            </div>
-                          </div>
-                          <button type="submit">Announce</button>
+                            <button type="submit">Announce</button>
                         </div>
-                      </div>
-                    
-                  </div>
+                    </div>
+                </div>
             </section>
         </main>
         <script
